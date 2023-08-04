@@ -25,25 +25,32 @@
   </head>
   <body>
     <div class="container">
-      <div class="row col-lg-6">
-        <div class="nav">
-          <div class="navbar-brand">Praise N.</div>
-          <div class="nav-item ms-auto pe-5">
-            <a href="" class="active">Home</a>
+      <div class="row">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#"><span>Praise N.</span></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-item nav-link pe-5" href="#home">Home</a>
+              <a class="nav-item nav-link pe-5" href="#about">About</a>
+              <a class="nav-item nav-link pe-5" href="#project">Project</a>
+              <a class="nav-item nav-link" href="#contact">Contact</a>
+            </div>
           </div>
-          <div class="nav-item pe-5">
-            <a href="#about">About</a>
-          </div>
-          <div class="nav-item pe-5">
-            <a href="#project">Projects</a>
-          </div>
-          <div class="nav-item pe-5">
-            <a href="#contact">Contact</a>
-          </div>
-        </div>
+        </nav>
       </div>
     </div>
-    <div class="container-hero">
+    <div class="container-hero" id="home">
       <div class="row">
         <div class="col-lg-10 offset-1">
           <h3>Hello, It's <span> Me</span></h3>
@@ -107,27 +114,115 @@
       </div>
     </div>
 
-    <div class="container-project">
+    <div class="container-skills">
       <div class="row">
-        <div class="col-lg-12 text-center">
-          <h1>Projects</h1>
-          <div class="proj">
-              <img src="img/mp1.png" class="mp1" />
-              <!-- <p>Construction website</p> -->
-              <img src="img/mp2.PNG" class="mp2" />
+        <div class="col-lg-12 col-sm-12">
+          <h1 class="text-center">Skills</h1>
+          <div class="col-lg-6 offset-1">
+            <div class="container">
+              <h5>Client-side programming</h5>
+              <p>Responsive Web design</p>
+              <p>Javascript and DOM Manipulation</p>
+              <p>Data Structures and Algorithms</p>
+              <p>Web APIs</p>
+              <p>React Js Javascript Framework</p>
             </div>
-            </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-12 mt-5 text-center">
-              <div class="proj">
-              <a href="https://praisenera.github.io/admin/" ><img src="img/capstone.png" class="caps" /></a>
-            </div>
-            </div>
+            <div class="container">
+              <h5>Server-side programming</h5>
+              <p>Database Design</p>
+              <p>XAMPP Server</p>
+              <p>PHP Object-Oriented Programming</p>
+              <p>MVC Software Architecture</p>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="container-project" id="project">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1>Projects</h1>
+        </div>
+      </div>
+    </div>
+    <div class="container-proj">
+      <div class="row col-lg-12 offset-1 mp">
+        <div class="col-lg-6">
+          <a href="https://praisenera.github.io/MP1/">
+            <img src="img/mp1.PNG" class="mp1"
+          /></a>
+        </div>
+        <div class="col-lg-4 mt-5">
+          <h5 class="mt-5"><i>Featured Project</i></h5>
+          <p>
+            A solo project where i build a responsive construction website where
+            you can browse and and see what the company offer in building
+            buildings and houses.
+          </p>
+          <h5 class="mt-5"><i>Tools used: </i></h5>
+          <p>HTML | CSS | BOOTSTRAP | GIT</p>
+          <!-- <h5><i>Tools used: </i></h5>
+          <img src="img/html.png" class="tool" alt="html" />
+          <img src="img/css.png" class="tool" alt="css" /> -->
+        </div>
+      </div>
+      <div class="row col-lg-12 offset-1 mp">
+        <div class="col-lg-4">
+          <h5 class="mt-5"><i>Featured Project</i></h5>
+          <p>
+            Is an online food delivery services in the Philippines that offers a
+            wide selection of restaurants and cuisines to cater to your unique
+            taste buds. We provide an extensive restaurant selection, ensuring a
+            diverse range of options to satisfy any craving.
+          </p>
+          <h5 class="mt-5"><i>Tools used: </i></h5>
+          <p>REACT JS | CSS | SQL | GIT/p></p>
+        </div>
+
+        <div class="col-lg-6">
+          <img src="img/mp2.PNG" alt="mp2" class="mp2" />
+        </div>
+      </div>
+      <div class="row col-lg-12 cap">
+        <div class="col-lg-6 col-md-6 col-sm-12 offset-1">
+          <a href="https://praisenera.github.io/admin/"
+            ><img src="img/capstone.PNG" alt="caps" class="capstone"
+          /></a>
+        </div>
+        <div class="col-lg-4 mt-5">
+          <h5 class="mt-5"><i>Featured Project</i></h5>
+          <p>
+            An enrollment system that designed to collect student information
+            before they haved enrolled in school.My main duty as a back end
+            developer on this project is to create the server-side components of
+            the website that manage data processing and storage.
+          </p>
+          <h5 class="mt-5"><i>Tools used: </i></h5>
+          <p>REACT JS | CSS | REACT-BOOTSTRAP | FIREBASE | GIT</p>
+        </div>
+      </div>
+    </div>
+    <div class="container-next text-center">
+      <div class="row col-lg-12">
+        <h1>What's <span>Next?</span></h1>
+      </div>
+      <div class="container-net">
+        <p>
+          I'm getting in touch to let you know that I'm currently searching for
+          a new opportunity as a Web developer Front end, Back end or Full
+          stack. If you are interested in my service. My inbox is always open.
+        </p>
+      </div>
+    </div>
+    </div>
+    <footer>
+      <div class="container-footer" id="contact">
+        <div class="row text-center">
+          <p>praisenera.02@gmail.com | 0947-321-9394</p>
+          <p class="text-light">Designed and Built by: <span>Praise Nera</span></p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -14,9 +14,10 @@ body {
   background-color: #1f242d;
   color: white;
 }
-.nav {
+nav {
   padding-top: 20px;
   position: fixed;
+  background: #1f242d;
 }
 .navbar-brand {
   font-size: 20px;
@@ -26,12 +27,12 @@ body {
 span {
   color: #0ef;
 }
-.nav-item a {
+.nav-item {
   text-decoration: none;
   color: white;
 }
-a:hover,
-a.active {
+.nav-item:hover,
+.nav-item.active {
   color: #0ef;
 }
 .container-hero {
@@ -68,6 +69,9 @@ a.active {
   box-shadow: 0 0 15px #0ef;
   transition: all 0.5s ease;
 }
+.container-hero .active {
+  color: #0ef;
+}
 
 .container-hero a:hover .bi {
   color: #0ef;
@@ -97,33 +101,97 @@ a.active {
   font-size: 60px;
   margin-top: 100px;
 }
+.container-skills h1 {
+  font-weight: bold;
+  font-size: 60px;
+  margin-top: 100px;
+}
+.container-skills .container {
+  margin-left: 200px;
+  margin-top: 50px;
+}
+.container-skills h5 {
+  color: #999ea7fd;
+  font-weight: bold;
+}
+.container-skills p {
+  color: #8c8f96c5;
+  font-size: 20px;
+}
 .container-project {
   padding-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .container-project h1 {
   font-weight: bold;
   font-size: 60px;
 }
-.container-project .mp1 {
-  width: 400px;
-  height: 200px;
-  margin-right: 50px;
+.container-proj {
+  margin-bottom: 100px;
 }
-.container-project .mp2 {
-  width: 400px;
-  height: 200px;
-  margin-right: 50px;
+.container-proj h5 {
+  font-weight: bold;
+  color: #0ef;
 }
-.container-project .caps {
-  width: 400px;
-  height: 200px;
+.container-proj .mp1 {
+  width: 600px;
+  height: 400px;
 }
-.container-project .proj {
-  padding-top: 50px;
+.container-proj .tool {
+  width: 100px;
 }
+.container-proj .mp2 {
+  width: 600px;
+  height: 400px;
+}
+.container-proj .mp {
+  margin-top: 100px;
+}
+.container-proj .cap {
+  margin-top: 100px;
+}
+.container-proj .capstone {
+  width: 600px;
+  height: 400px;
+}
+
 img:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 238, 255),
     0 17px 50px 0 rgba(0, 238, 255, 0.19);
   transform: translateY(-0.25em);
+}
+.container-footer {
+  color: #909397c5;
+}
+.container-next {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.container-next h1 {
+  font-weight: bold;
+  font-size: 60px;
+}
+.container-net {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.container-net p {
+  font-size: 20px;
+}
+@media (min-width: 576px) {
+  .container-skills .container {
+    margin-left: 100px;
+  }
+  .container-proj img {
+    width: 200px;
+  }
+}
+@media (min-width: 768px) {
+  .container-proj img {
+    width: 300px;
+    height: 150px;
+  }
 }
