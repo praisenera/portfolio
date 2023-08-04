@@ -7,6 +7,9 @@
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
 }
+/* html {
+  scroll-behavior: smooth;
+} */
 body {
   background-color: #1f242d;
   color: white;
@@ -27,7 +30,8 @@ span {
   text-decoration: none;
   color: white;
 }
-a:hover {
+a:hover,
+a.active {
   color: #0ef;
 }
 .container-hero {
@@ -59,10 +63,67 @@ a:hover {
 .bi-linkedin {
   padding-right: 30px;
 }
+.container-hero a:hover:icon {
+  border: 5px solid #0ef;
+  box-shadow: 0 0 15px #0ef;
+  transition: all 0.5s ease;
+}
+
+.container-hero a:hover .bi {
+  color: #0ef;
+  text-shadow: 0 0 15px #0ef;
+  transition: all 0.5s ease;
+}
 .container-hero .btn {
   margin-top: 20px;
   margin-left: 30px;
+  color: white;
+  line-height: 2;
   border-radius: 50px;
-  background-color: #0ef;
-  border: none;
+  /* background-color: #0ef; */
+  border: 2px solid #0ef;
+}
+.container-hero .btn:hover,
+.container-hero .btn:focus {
+  box-shadow: 0 12px 16px 0 rgba(0, 238, 255),
+    0 17px 50px 0 rgba(0, 238, 255, 0.19);
+  transform: translateY(-0.25em);
+}
+.container-about {
+  scroll-snap-type: proximity;
+}
+.container-about h1 {
+  font-weight: bold;
+  font-size: 60px;
+  margin-top: 100px;
+}
+.container-project {
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+.container-project h1 {
+  font-weight: bold;
+  font-size: 60px;
+}
+.container-project .mp1 {
+  width: 400px;
+  height: 200px;
+  margin-right: 50px;
+}
+.container-project .mp2 {
+  width: 400px;
+  height: 200px;
+  margin-right: 50px;
+}
+.container-project .caps {
+  width: 400px;
+  height: 200px;
+}
+.container-project .proj {
+  padding-top: 50px;
+}
+img:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 238, 255),
+    0 17px 50px 0 rgba(0, 238, 255, 0.19);
+  transform: translateY(-0.25em);
 }
