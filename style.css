@@ -133,12 +133,19 @@ span {
   font-weight: bold;
   color: #0ef;
 }
+.container-proj p {
+  text-indent: 30px;
+}
 .container-proj .mp1 {
   width: 600px;
   height: 400px;
 }
 .container-proj .tool {
   width: 100px;
+}
+.container-proj h6 {
+  font-size: 18px;
+  color: rgb(55, 242, 255);
 }
 .container-proj .mp2 {
   width: 600px;
